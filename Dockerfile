@@ -18,5 +18,7 @@ RUN npm run build
 # base image for nginx server to serve the app
 FROM nginx
 
+EXPOSE 80
+
 # copy the build directory from the builder image to nginx html folder for serving the app
 COPY --from=builder /usr/app/build /usr/share/nginx/html
