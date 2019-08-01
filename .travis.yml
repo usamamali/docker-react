@@ -1,3 +1,4 @@
+# tell travis we need sudo priviledges
 sudo: required
 
 services:
